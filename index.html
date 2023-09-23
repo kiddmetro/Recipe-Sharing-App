@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiddmetro Recipe Sharing App </title>
+  <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+ 
+</head>
+
+<body>
+
+  <!-- Nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" class="logo" alt="logo image">
+        REcipeKidd
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-bar " id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#recipe" role="button" aria-controls="recipe">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chef</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <div class="search-area d-md-inline d-none">
+          <button type="button" class="search-button"><i class="bi bi-search search-icon"></i></button>
+          <input type="text" name="search-bar" placeholder="Search Recipes..." id="search-bar" >
+        </div>
+
+      </div>
+
+      <div class="nav-icon d-md-inline d-none">
+        <a href="#"><i class="bi bi-box-arrow-in-right"></i></a>
+        <a href="#"><i class="bi bi-door-open"></i></a>
+      </div>
+
+    </div>
+  </nav>
+
+  
+
+
+
+  <!-- Into and Banner Section -->
+  <div id="intro ">
+    <div class="container-fluid ">
+      <div class="container banner-brand">
+        <div class="row banner-info ">
+          <div class="col-md-6 text-center banner-brand-logo">
+              <img src="./images/logo.png" class="logo" alt="logo image">
+             <div>
+                <p>REcipeKidd <br>
+                Here to serve</p>
+             </div>
+          </div>
+          <div class="col-md-6 text-center text-md-start">
+            <h1>
+              <div class="display-2 text-white banner-text">What do you want to cook today? Any reciepe of your choice </div>
+            </h1>
+            <p class="my-3 py-5 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, cum, enim ad ab, voluptates nemo rem sequi repellendus quos perferendis temporibus alias ea. Commodi iste adipisci itaque numquam maiores? Eos praesentium repellat animi! Sunt error doloremque nihil quidem id porro!</p>     
+            <a href="#popular-recipes" class="btn btn-primary recipe-button">View Recipes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Popular Recipes -->
+   <div id="popular-recipes" class="container-xxl">
+    <div class="container-lg">
+        <div class="text-center mt-5 border-bottom">
+          <h2 class="text-dark">Discover our Community Popular Reciepe</h2>
+        </div>
+        <div class="recipe-menu" id="recipeMenu">
+        <!-- ... Javascript populates this area -->
+      
+        </div>
+      
+          
+  
+
+    </div>
+</div>
+
+
+<!-- Off Canvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="recipe" aria-labelledby="recipeLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="recipeLabel">Categories</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <ul class="side-bar">
+        <li class="side-bar-menu">
+          <img src="./images/svg/food-cover-svgrepo-com.svg" style="width: 20px;" alt="">
+          <a href="#" class="side-bar-name">All categories</a>
+        </li>
+        <hr>
+        <li class="side-bar-menu">
+          <img src="./images/svg/pasta-svgrepo-com.svg" style="width: 20px;" alt="">
+          <a href="#" class="side-bar-name">Main Dish</a>
+        </li>
+        <hr>
+        <li class="side-bar-menu">
+          <img src="./images/svg/vegetables-salad-svgrepo-com.svg" style="width: 20px;" alt="">
+          <a href="#" class="side-bar-name">Salads</a>
+        </li>
+        <hr>
+        <li class="side-bar-menu">
+          <img src="./images/svg/beverage-bubble-coffee-cup-drink-tea-svgrepo-com.svg" style="width: 20px;" alt="">
+          <a href="#" class="side-bar-name">Beverages</a>
+        </li>
+        <hr>
+        <li class="side-bar-menu">
+          <img src="./images/svg/dessert-svgrepo-com.svg" style="width: 20px;" alt="">
+          <a href="#" class="side-bar-name">Desserts</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Form for adding Recipes -->
+<div id="add-recipe my-5">
+  <div class="container-lg ">
+    <hr>
+      <h2 class="text-center">Add Your Recipes</h2>
+      <p class="lead text-center">
+          Fill the Form to add your Recipe to be part of our Community
+      </p>
+
+      <div class="row justify-content-center my-5">
+
+          <div class="col-lg-6">
+              <form id="foodForm" enctype="multipart/form-data">
+                  <label for="name" class="form-label">Name: </label>
+                  <div class="input-group mb-4">
+                      <span class="input-group-text">
+                          <i class="bi bi-person-fill"></i>
+                      </span>
+                      <input type="text" class="form-control" id="name" placeholder="e.g Wang Shou">
+                  </div>
+
+                  <label for="chef-title" class="form-label">Chef Title: </label>
+                  <div class="input-group mb-4">
+                      <span class="input-group-text">
+                        <i class="bi bi-person-badge"></i>
+                      </span>
+                      <select class="form-select" id="chef-title">
+                          <option value="pricing" selected>Star Chef</option>
+                          <option value="content">Senior Chef</option>
+                          <option value="other">Junior Chef</option>
+                      </select>
+                  </div>
+              
+
+                  <label for="recipe-name" class="form-label">Recipe Name: </label>
+                  <div class="input-group mb-4">
+                      <input type="text" class="form-control" id="recipe-name" placeholder="e.g Chinese Noodles">
+                  </div>
+
+                
+                  <label for="description" class="form-label">Description of Food: </label>
+                  <div class="input-group mb-4">
+                    <textarea id="description" class="form-control" style="height: 110px;"></textarea>
+                  </div>  
+                  
+                  <label for="ingredients" class="form-label">Ingredients of Food: </label>
+                  <div class="input-group mb-4">
+                    <textarea id="ingredients" class="form-control" placeholder="Put a comma for each ingredients..." style="height: 100px;"></textarea>
+                  </div>  
+
+                  <label for="instructions" class="form-label">Instructions of Food: </label>
+                  <div class="input-group mb-4">
+                    <textarea id="instructions" class="form-control" style="height: 140px;"></textarea>
+                  </div>  
+
+                  <label for="food-image" class="form-label">Upload Image:</label>
+                  <div class="input-group mb-4">
+                      <input type="file" class="form-control" id="food-image" accept="image/*">
+                  </div>
+
+                  <div class="mb-4 text-center">
+                      <button type="submit" class="btn btn-primary text-white submit-button">Submit</button>
+                  </div>
+                  
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+ <!-- footer -->
+
+ <div class="navbar mt-3 navbar-expand-md bg-primary">
+  <div class="container-xxl bg-primary">
+    <a class="navbar-brand text-white" href="#">
+      <img src="./images/logo.png" class="logo" alt="logo image">
+      REcipeKidd
+    </a>
+
+      <div class=" navbar-collapse justify-content-end p-md-5 py-5 align-center" >
+          <ul class="navbar-nav ">
+            <li class="nav-item ">
+              <a class="nav-link text-white" href="#"><i class="bi bi-c-circle"></i> 2023 Kiddmetro, Inc.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Privacy</a>
+            </li>             
+          </ul>
+      </div>
+      
+  </div>
+</div>
+
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
