@@ -11989,8 +11989,8 @@ body {
 }
 @media (max-width: 575.98px) {
   .recipe-menu .food-recipe-container {
-    width: 400px;
-    height: 450px;
+    width: 300px;
+    height: 550px;
   }
 }
 .recipe-menu .food-recipe-container .recipe-image {
@@ -12001,7 +12001,8 @@ body {
 }
 @media (max-width: 575.98px) {
   .recipe-menu .food-recipe-container .recipe-image {
-    width: 390px;
+    width: 290px;
+    height: 200px;
   }
 }
 .recipe-menu .food-recipe-container .recipe-info {
@@ -12010,7 +12011,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .recipe-menu .food-recipe-container .recipe-info {
-    width: 400px;
+    width: 200px;
   }
 }
 .recipe-menu .food-recipe-container .chef-info {
@@ -12021,16 +12022,6 @@ body {
 .recipe-menu .food-recipe-container .chef-info .chef-profile {
   font-size: 0.8rem;
   margin-left: 10px;
-}
-@media (max-width: 575.98px) {
-  .recipe-menu .food-recipe-container .chef-info .chef-profile .chef-name {
-    display: none;
-  }
-}
-@media (max-width: 575.98px) {
-  .recipe-menu .food-recipe-container .chef-info .chef-profile .chef-title {
-    display: none;
-  }
 }
 .recipe-menu .food-recipe-container .chef-info .chef-profile .chef-in {
   margin-left: -50px;
@@ -12048,12 +12039,6 @@ body {
   object-position: center center;
   margin-top: 10px;
 }
-@media (max-width: 575.98px) {
-  .recipe-menu .food-recipe-container .chef-info img {
-    display: none;
-  }
-}
-
 div .side-bar-menu {
   list-style-type: none;
 }
