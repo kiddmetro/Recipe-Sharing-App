@@ -63,4 +63,7 @@ In the try-catch-finally block,i also ensure that an image is selected before su
 # Conclusion
 Creating a recipe sharing platform involves a combination of JavaScript features such as classes, switch statements, and try-catch-finally blocks. With this my project, you can build a robust form that not only collects recipe data but also ensures that the data is valid and displays dynamic content based on user interactions.
 
+# Link
+https://kiddmetro-recipe-sharing-app.netlify.app/
+
 
